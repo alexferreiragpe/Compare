@@ -1,19 +1,26 @@
 package com.alex.compare;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Main extends AppCompatActivity {
+    ImageButton btnSobre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+
+
+        btnSobre = (ImageButton) findViewById(R.id.btSobre);
         setTitle("Compare: Álcool X Gasolina");
         Button BtnCalcula = (Button) findViewById(R.id.btnCalcular);
         final EditText ValorAlcoolVA = (EditText) findViewById(R.id.ValorAlcool);
@@ -42,8 +49,15 @@ public class Main extends AppCompatActivity {
                         TxtExibe.setText("ÁLCOOL");
                         TxtExibe.setBackgroundResource(R.drawable.fundoalcool);
                     }
-                    TxtMensagem.setText(result + "%. É o valor do álcool em relação ao preço da gasolina");
+                    TxtMensagem.setText(result + "% \nÉ o valor do Álcool em relação ao Preço da Gasolina");
                 }
+            }
+        });
+
+        btnSobre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main.this, Sobre.class));
             }
         });
 

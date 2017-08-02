@@ -171,33 +171,30 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/linearLayout5"
             android:layout_weight="1"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:textAlignment="center">
 
             <TextView
                 android:id="@+id/txtMensagem"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.47"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
-        </LinearLayout>
+            <ImageButton
+                android:id="@+id/btSobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/botao_redondo_sobre"
+                app:srcCompat="@android:drawable/ic_menu_info_details" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_weight="0.47"
-            android:paddingEnd="10dp"
-            android:text="By Alex Ferreira  ->  alexferreira@hotmail.com.br"
-            android:textAlignment="textEnd"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+        </LinearLayout>
 
     </RelativeLayout>
 

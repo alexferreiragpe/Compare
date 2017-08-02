@@ -36,20 +36,20 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="140dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="88dp"
                 app:srcCompat="@drawable/selo_alcool" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="82dp"
+                android:layout_marginLeft="70dp"
                 app:srcCompat="@drawable/selo_gasolina" />
 
         </LinearLayout>
@@ -176,16 +176,15 @@
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.47"
-                android:text="By Alex Ferreira  ->  alexferreira@hotmail.com.br"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textStyle="bold" />
         </LinearLayout>
+        <ImageButton
+            android:id="@+id/btSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_redondo_sobre"
+            app:srcCompat="@android:drawable/ic_menu_info_details"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 
